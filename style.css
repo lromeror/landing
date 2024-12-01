@@ -28,7 +28,7 @@ body {
   --heading-color: #111;
   --heading-line-height: 1.24;
 
-  --swiper-theme-color: #8C907E;
+  --swiper-theme-color: #ffffff;
 
   /* bootstrap */
   --bs-body-font-family: "Jost", Roboto, sans-serif;
@@ -1014,10 +1014,6 @@ a {
 
 .video .video-player {
   position: absolute;
-}
-
-.video .video-player {
-  position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
@@ -1041,13 +1037,32 @@ a {
   margin: auto;
 }
 
+.video .video-bg {
+  display: flex; /* Flexbox para alinear y centrar la imagen */
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  height: 100%; /* Asegura que ocupe el alto completo */
+}
+
+.video .video-bg img {
+  width: 75%; /* Ajusta el tamaño de la imagen (puedes cambiar el porcentaje) */
+  height: auto; /* Mantiene la relación de aspecto */
+  object-fit: cover; /* Hace que la imagen cubra todo el área sin deformarse */
+}
+
 @media (max-width: 600px) {
   .video .video-player img.text-pattern {
     width: 60%;
     display: flex;
     margin: 0 auto;
   }
+
+  /* Ajusta el tamaño de la imagen en pantallas más pequeñas */
+  .video .video-bg img {
+    width: 100%; /* En pantallas más pequeñas, la imagen ocupa el 100% del contenedor */
+  }
 }
+
 
 /*--------------------------------------------------------------
 /** 7.9 Testimonial Slider
