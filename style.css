@@ -23,7 +23,7 @@ CSS STRUCTURE:
 
 --------------------------------------------------------------*/
 body {
-  --heading-font: "Marcellus", Roboto, sans-serif;
+  --heading-font: "Montserrat", Roboto, sans-serif;
   --heading-font-weight: 400;
   --heading-color: #111;
   --heading-line-height: 1.24;
@@ -35,7 +35,7 @@ body {
   --bs-body-font-size: 18px;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
-  --bs-body-color: #8f8f8f;
+  --bs-body-color: #7e9394;
   --bs-body-color-rgb: 143, 143, 143;
 
   --bs-primary: #8C907E;
@@ -179,7 +179,7 @@ a {
 
 .btn-primary {
   --bs-btn-color: #fff;
-  --bs-btn-bg: #8C907E;
+  --bs-btn-bg: #c6c9bc;
   --bs-btn-border-color: #8C907E;
   --bs-btn-hover-color: #fff;
   --bs-btn-hover-bg: #5e624e;
@@ -442,6 +442,30 @@ a {
     clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
   }
 }
+
+/* Asegura que el texto no se desborde en pantallas pequeñas */
+#billboard .col-md-6 p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 767px) {
+  /* Ajusta el tamaño del texto en pantallas pequeñas */
+  #billboard .col-md-6 h1 {
+    font-size: 1.5rem;
+  }
+}
+
+.swiper-button-next, .swiper-button-prev {
+  color: #000; /* Color de las flechas */
+  background-color: rgba(255, 255, 255, 0.5); /* Fondo translúcido */
+  border-radius: 50%; /* Flechas redondeadas */
+}
+
+.swiper-button-next:hover, .swiper-button-prev:hover {
+  color: #fff; /* Color de las flechas al pasar el mouse */
+}
+
 
 /* open-up */
 .open-up {

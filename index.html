@@ -16,6 +16,7 @@
   <link rel="stylesheet" type="text/css" href="css/vendor.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="css/mystyle.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,7 +28,7 @@
 <body class="homepage">
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">COMPUTRON</a>
+      <a class="navbar-brand" href="#">MUNDO TECH</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -57,7 +58,6 @@
           <li class="nav-item"><a class="nav-link" href="#">LAPTOP</a></li>
           <li class="nav-item"><a class="nav-link" href="#">ELECTRODOMÉSTICOS</a></li>
           <li class="nav-item"><a class="nav-link" href="#">CELULARES</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">BLACK FRIDAY</a></li>
         </ul>
         <!-- Buscador -->
         <form class="d-flex me-3">
@@ -282,141 +282,160 @@
       </div>
     </div>
   </div>
-
-
   <section id="billboard" class="bg-light py-5">
     <div class="container">
-      <div class="row justify-content-center">
-        <h1 class="section-title text-center mt-4" data-aos="fade-up">MundoTech</h1>
-        <div class="col-md-6 text-center" data-aos="fade-up" data-aos-delay="300">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe voluptas ut dolorum consequuntur, adipisci
-            repellat! Eveniet commodi voluptatem voluptate, eum minima, in suscipit explicabo voluptatibus harum,
-            quibusdam ex repellat eaque!</p>
+      <div class="row justify-content-between">
+        
+        <div class="col-md-6 d-flex flex-column justify-content-center" data-aos="fade-up">
+          <h1 class="section-title text-left mt-4">MundoTech</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe voluptas ut dolorum consequuntur, adipisci repellat! Eveniet commodi voluptatem voluptate, eum minima, in suscipit explicabo voluptatibus harum, quibusdam ex repellat eaque!</p>
         </div>
-      </div>
-      <div class="row">
-        <div class="swiper main-swiper py-4" data-aos="fade-up" data-aos-delay="600">
-          <div class="swiper-wrapper d-flex border-animation-left">
-            <div class="swiper-slide">
-              <div class="banner-item image-zoom-effect">
-                <div class="image-holder">
-                  <a href="#">
-                    <img src="images/imagLaptops/01_X1605VA-MB649.jpg" alt="product" class="img-fluid">
-                  </a>
+        
+        <!-- Columna de carrusel (derecha) -->
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <!-- Carrusel de Bootstrap -->
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <!-- Slide 1 -->
+              <div class="carousel-item active">
+                <div class="banner-item image-zoom-effect">
+                  <div class="image-holder">
+                    <a href="#">
+                      <!-- Cambié la clase 'img-fluid' por 'w-75' para hacer la imagen más pequeña -->
+                      <img src="images/imagLaptops/01_X1605VA-MB649.jpg" alt="product" class="d-block w-75 mx-auto img-fluid">
+                    </a>
+                  </div>
+                  <div class="banner-content py-4">
+                    <h5 class="element-title text-uppercase">
+                      <a href="index.html" class="item-anchor">Soft leather jackets</a>
+                    </h5>
+                    <p>Scelerisque duis aliquam qui lorem ipsum dolor amet, consectetur adipiscing elit.</p>
+                    <div class="btn-left">
+                      <a href="#" class="btn-link fs-6 text-uppercase item-anchor text-decoration-none">Discover Now</a>
+                    </div>
+                  </div>
                 </div>
-                <div class="banner-content py-4">
-                  <h5 class="element-title text-uppercase">
-                    <a href="index.html" class="item-anchor">Soft leather jackets</a>
-                  </h5>
-                  <p>Scelerisque duis aliquam qui lorem ipsum dolor amet, consectetur adipiscing elit.</p>
-                  <div class="btn-left">
-                    <a href="#" class="btn-link fs-6 text-uppercase item-anchor text-decoration-none">Discover Now</a>
+              </div>
+              <!-- Slide 2 -->
+              <div class="carousel-item">
+                <div class="banner-item image-zoom-effect">
+                  <div class="image-holder">
+                    <a href="#">
+                      <!-- Igualmente, aquí se reduce el tamaño con 'w-75' -->
+                      <img src="images/imagLaptops/02_X1504VA-NJ514.jpg" alt="product" class="d-block w-75 mx-auto img-fluid">
+                    </a>
+                  </div>
+                  <div class="banner-content py-4">
+                    <h5 class="element-title text-uppercase">
+                      <a href="index.html" class="item-anchor">Soft leather jackets</a>
+                    </h5>
+                    <p>Scelerisque duis aliquam qui lorem ipsum dolor amet, consectetur adipiscing elit.</p>
+                    <div class="btn-left">
+                      <a href="#" class="btn-link fs-6 text-uppercase item-anchor text-decoration-none">Discover Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Slide 3 -->
+              <div class="carousel-item">
+                <div class="banner-item image-zoom-effect">
+                  <div class="image-holder">
+                    <a href="#">
+                      <!-- Reducción del tamaño de la imagen en el tercer slide -->
+                      <img src="images/imagLaptops/07_X1605VA-MB649.jpg" alt="product" class="d-block w-75 mx-auto img-fluid">
+                    </a>
+                  </div>
+                  <div class="banner-content py-4">
+                    <h5 class="element-title text-uppercase">
+                      <a href="index.html" class="item-anchor">Soft leather jackets</a>
+                    </h5>
+                    <p>Scelerisque duis aliquam qui lorem ipsum dolor amet, consectetur adipiscing elit.</p>
+                    <div class="btn-left">
+                      <a href="#" class="btn-link fs-6 text-uppercase item-anchor text-decoration-none">Discover Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Slide 4 -->
+              <div class="carousel-item">
+                <div class="banner-item image-zoom-effect">
+                  <div class="image-holder">
+                    <a href="#">
+                      <!-- Reducción del tamaño de la imagen -->
+                      <img src="images/imagLaptops/13-BG0002LA-7.jpg" alt="product" class="d-block w-75 mx-auto img-fluid">
+                    </a>
+                  </div>
+                  <div class="banner-content py-4">
+                    <h5 class="element-title text-uppercase">
+                      <a href="index.html" class="item-anchor">Soft leather jackets</a>
+                    </h5>
+                    <p>Scelerisque duis aliquam qui lorem ipsum dolor amet, consectetur adipiscing elit.</p>
+                    <div class="btn-left">
+                      <a href="#" class="btn-link fs-6 text-uppercase item-anchor text-decoration-none">Discover Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Slide 5 -->
+              <div class="carousel-item">
+                <div class="banner-item image-zoom-effect">
+                  <div class="image-holder">
+                    <a href="#">
+                      <!-- Reducción con 'w-75' para el quinto slide -->
+                      <img src="images/imagLaptops/14-DQ5029LA.jpg" alt="product" class="d-block w-75 mx-auto img-fluid">
+                    </a>
+                  </div>
+                  <div class="banner-content py-4">
+                    <h5 class="element-title text-uppercase">
+                      <a href="index.html" class="item-anchor">Out crop sweater</a>
+                    </h5>
+                    <p>Scelerisque duis aliquam qui lorem ipsum dolor amet, consectetur adipiscing elit.</p>
+                    <div class="btn-left">
+                      <a href="#" class="btn-link fs-6 text-uppercase item-anchor text-decoration-none">Discover Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Slide 6 -->
+              <div class="carousel-item">
+                <div class="banner-item image-zoom-effect">
+                  <div class="image-holder">
+                    <a href="#">
+                      <!-- Reducción de tamaño con 'w-75' para el sexto slide -->
+                      <img src="images/imagLaptops/14-EM0026LA-W11-2.jpg" alt="product" class="d-block w-75 mx-auto img-fluid">
+                    </a>
+                  </div>
+                  <div class="banner-content py-4">
+                    <h5 class="element-title text-uppercase">
+                      <a href="index.html" class="item-anchor">Soft leather jackets</a>
+                    </h5>
+                    <p>Scelerisque duis aliquam qui lorem ipsum dolor amet, consectetur adipiscing elit.</p>
+                    <div class="btn-left">
+                      <a href="#" class="btn-link fs-6 text-uppercase item-anchor text-decoration-none">Discover Now</a>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="swiper-slide">
-              <div class="banner-item image-zoom-effect">
-                <div class="image-holder">
-                  <a href="#">
-                    <img src="images/imagLaptops/02_X1504VA-NJ514.jpg" alt="product" class="img-fluid">
-                  </a>
-                </div>
-                <div class="banner-content py-4">
-                  <h5 class="element-title text-uppercase">
-                    <a href="index.html" class="item-anchor">Soft leather jackets</a>
-                  </h5>
-                  <p>Scelerisque duis aliquam qui lorem ipsum dolor amet, consectetur adipiscing elit.</p>
-                  <div class="btn-left">
-                    <a href="#" class="btn-link fs-6 text-uppercase item-anchor text-decoration-none">Discover Now</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="banner-item image-zoom-effect">
-                <div class="image-holder">
-                  <a href="#">
-                    <img src="images/imagLaptops/07_X1605VA-MB649.jpg" alt="product" class="img-fluid">
-                  </a>
-                </div>
-                <div class="banner-content py-4">
-                  <h5 class="element-title text-uppercase">
-                    <a href="index.html" class="item-anchor">Soft leather jackets</a>
-                  </h5>
-                  <p>Scelerisque duis aliquam qui lorem ipsum dolor amet, consectetur adipiscing elit.</p>
-                  <div class="btn-left">
-                    <a href="#" class="btn-link fs-6 text-uppercase item-anchor text-decoration-none">Discover Now</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="banner-item image-zoom-effect">
-                <div class="image-holder">
-                  <a href="#">
-                    <img src="images/imagLaptops/13-BG0002LA-7.jpg" alt="product" class="img-fluid">
-                  </a>
-                </div>
-                <div class="banner-content py-4">
-                  <h5 class="element-title text-uppercase">
-                    <a href="index.html" class="item-anchor">Soft leather jackets</a>
-                  </h5>
-                  <p>Scelerisque duis aliquam qui lorem ipsum dolor amet, consectetur adipiscing elit.</p>
-                  <div class="btn-left">
-                    <a href="#" class="btn-link fs-6 text-uppercase item-anchor text-decoration-none">Discover Now</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="banner-item image-zoom-effect">
-                <div class="image-holder">
-                  <a href="#">
-                    <img src="images/imagLaptops/14-DQ5029LA.jpg" alt="product" class="img-fluid">
-                  </a>
-                </div>
-                <div class="banner-content py-4">
-                  <h5 class="element-title text-uppercase">
-                    <a href="index.html" class="item-anchor">Out crop sweater</a>
-                  </h5>
-                  <p>Scelerisque duis aliquam qui lorem ipsum dolor amet, consectetur adipiscing elit.</p>
-                  <div class="btn-left">
-                    <a href="#" class="btn-link fs-6 text-uppercase item-anchor text-decoration-none">Discover Now</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="banner-item image-zoom-effect">
-                <div class="image-holder">
-                  <a href="#">
-                    <img src="images/imagLaptops/14-EM0026LA-W11-2.jpg" alt="product" class="img-fluid">
-                  </a>
-                </div>
-                <div class="banner-content py-4">
-                  <h5 class="element-title text-uppercase">
-                    <a href="index.html" class="item-anchor">Soft leather jackets</a>
-                  </h5>
-                  <p>Scelerisque duis aliquam qui lorem ipsum dolor amet, consectetur adipiscing elit.</p>
-                  <div class="btn-left">
-                    <a href="#" class="btn-link fs-6 text-uppercase item-anchor text-decoration-none">Discover Now</a>
-                  </div>
-                </div>
-              </div>
-            </div>
+            
+            <!-- Controles del carrusel -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
-          <div class="swiper-pagination"></div>
         </div>
-        <div class="icon-arrow icon-arrow-left"><svg width="50" height="50" viewBox="0 0 24 24">
-            <use xlink:href="#arrow-left"></use>
-          </svg></div>
-        <div class="icon-arrow icon-arrow-right"><svg width="50" height="50" viewBox="0 0 24 24">
-            <use xlink:href="#arrow-right"></use>
-          </svg></div>
+        
       </div>
     </div>
   </section>
+  
+  
+
 
   <section class="features py-5">
     <div class="container">
@@ -515,7 +534,7 @@
   <section id="new-arrival" class="new-arrival product-carousel py-5 position-relative overflow-hidden">
     <div class="container">
       <div class="d-flex flex-wrap justify-content-between align-items-center mt-5 mb-3">
-        <h4 class="text-uppercase">Our New Arrivals</h4>
+        <h4 class="text-uppercase">LAPTOPS</h4>
         <a href="index.html" class="btn-link">View All Products</a>
       </div>
       <div class="swiper product-swiper open-up" data-aos="zoom-out">
@@ -524,7 +543,7 @@
             <div class="product-item image-zoom-effect link-effect">
               <div class="image-holder position-relative">
                 <a href="index.html">
-                  <img src="images/product-item-1.jpg" alt="categories" class="product-image img-fluid">
+                  <img src="images/imgComp/24-CS0005LA.jpg" alt="categories" class="product-image img-fluid">
                 </a>
                 <a href="index.html" class="btn-icon btn-wishlist">
                   <svg width="24" height="24" viewBox="0 0 24 24">
@@ -544,7 +563,7 @@
             <div class="product-item image-zoom-effect link-effect">
               <div class="image-holder position-relative">
                 <a href="index.html">
-                  <img src="images/product-item-2.jpg" alt="categories" class="product-image img-fluid">
+                  <img src="images/imgComp/24-CB1029LA-W11-768x768.jpg" alt="categories" class="product-image img-fluid">
                 </a>
                 <a href="index.html" class="btn-icon btn-wishlist">
                   <svg width="24" height="24" viewBox="0 0 24 24">
@@ -564,7 +583,7 @@
             <div class="product-item image-zoom-effect link-effect">
               <div class="image-holder position-relative">
                 <a href="index.html">
-                  <img src="images/product-item-3.jpg" alt="categories" class="product-image img-fluid">
+                  <img src="images/imgComp/24-CA0013LA-10.jpg" alt="categories" class="product-image img-fluid">
                 </a>
                 <a href="index.html" class="btn-icon btn-wishlist">
                   <svg width="24" height="24" viewBox="0 0 24 24">
@@ -584,7 +603,7 @@
             <div class="product-item image-zoom-effect link-effect">
               <div class="image-holder position-relative">
                 <a href="index.html">
-                  <img src="images/product-item-4.jpg" alt="categories" class="product-image img-fluid">
+                  <img src="images/imgComp/X26C512A.jpg" alt="categories" class="product-image img-fluid">
                 </a>
                 <a href="index.html" class="btn-icon btn-wishlist">
                   <svg width="24" height="24" viewBox="0 0 24 24">
@@ -596,26 +615,6 @@
                     <a href="index.html">Crop sweater</a>
                   </h5>
                   <a href="#" class="text-decoration-none" data-after="Add to cart"><span>$50.00</span></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="product-item image-zoom-effect link-effect">
-              <div class="image-holder position-relative">
-                <a href="index.html">
-                  <img src="images/product-item-10.jpg" alt="categories" class="product-image img-fluid">
-                </a>
-                <a href="index.html" class="btn-icon btn-wishlist">
-                  <svg width="24" height="24" viewBox="0 0 24 24">
-                    <use xlink:href="#heart"></use>
-                  </svg>
-                </a>
-                <div class="product-content">
-                  <h5 class="text-uppercase fs-5 mt-3">
-                    <a href="index.html">Crop sweater</a>
-                  </h5>
-                  <a href="#" class="text-decoration-none" data-after="Add to cart"><span>$70.00</span></a>
                 </div>
               </div>
             </div>
@@ -632,35 +631,12 @@
     </div>
   </section>
 
-  <section class="collection bg-light position-relative py-5">
-    <div class="container">
-      <div class="row">
-        <div class="title-xlarge text-uppercase txt-fx domino">Collection</div>
-        <div class="collection-item d-flex flex-wrap my-5">
-          <div class="col-md-6 column-container">
-            <div class="image-holder">
-              <img src="images/single-image-2.jpg" alt="collection" class="product-image img-fluid">
-            </div>
-          </div>
-          <div class="col-md-6 column-container bg-white">
-            <div class="collection-content p-5 m-0 m-md-5">
-              <h3 class="element-title text-uppercase">Classic winter collection</h3>
-              <p>Dignissim lacus, turpis ut suspendisse vel tellus. Turpis purus, gravida orci, fringilla a. Ac sed eu
-                fringilla odio mi. Consequat pharetra at magna imperdiet cursus ac faucibus sit libero. Ultricies quam
-                nunc, lorem sit lorem urna, pretium aliquam ut. In vel, quis donec dolor id in. Pulvinar commodo mollis
-                diam sed facilisis at cursus imperdiet cursus ac faucibus sit faucibus sit libero.</p>
-              <a href="#" class="btn btn-dark text-uppercase mt-3">Shop Collection</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  
 
   <section id="best-sellers" class="best-sellers product-carousel py-5 position-relative overflow-hidden">
     <div class="container">
       <div class="d-flex flex-wrap justify-content-between align-items-center mt-5 mb-3">
-        <h4 class="text-uppercase">Best Selling Items</h4>
+        <h4 class="text-uppercase">CELULARES</h4>
         <a href="index.html" class="btn-link">View All Products</a>
       </div>
       <div class="swiper product-swiper open-up" data-aos="zoom-out">
@@ -669,7 +645,7 @@
             <div class="product-item image-zoom-effect link-effect">
               <div class="image-holder">
                 <a href="index.html">
-                  <img src="images/product-item-4.jpg" alt="categories" class="product-image img-fluid">
+                  <img src="images/imgPhon/INF-HOT30I-BK20gr-300x300.jpg" alt="categories" class="product-image img-fluid">
                 </a>
                 <a href="index.html" class="btn-icon btn-wishlist">
                   <svg width="24" height="24" viewBox="0 0 24 24">
@@ -689,7 +665,7 @@
             <div class="product-item image-zoom-effect link-effect">
               <div class="image-holder">
                 <a href="index.html">
-                  <img src="images/product-item-3.jpg" alt="product" class="product-image img-fluid">
+                  <img src="images/imgPhon/INF-HOT50I-256-BK-300x300.jpg" alt="product" class="product-image img-fluid">
                 </a>
                 <a href="index.html" class="btn-icon btn-wishlist">
                   <svg width="24" height="24" viewBox="0 0 24 24">
@@ -709,7 +685,7 @@
             <div class="product-item image-zoom-effect link-effect">
               <div class="image-holder">
                 <a href="index.html">
-                  <img src="images/product-item-5.jpg" alt="categories" class="product-image img-fluid">
+                  <img src="images/imgPhon/IPHONE15-128GB-BK20gr-300x300.jpg" alt="categories" class="product-image img-fluid">
                 </a>
                 <a href="index.html" class="btn-icon btn-wishlist">
                   <svg width="24" height="24" viewBox="0 0 24 24">
@@ -729,7 +705,7 @@
             <div class="product-item image-zoom-effect link-effect">
               <div class="image-holder">
                 <a href="index.html">
-                  <img src="images/product-item-6.jpg" alt="categories" class="product-image img-fluid">
+                  <img src="images/imgPhon/SAM-A25-5G-BL-300x300.jpg" alt="categories" class="product-image img-fluid">
                 </a>
                 <a href="index.html" class="btn-icon btn-wishlist">
                   <svg width="24" height="24" viewBox="0 0 24 24">
@@ -749,7 +725,7 @@
             <div class="product-item image-zoom-effect link-effect">
               <div class="image-holder">
                 <a href="index.html">
-                  <img src="images/product-item-9.jpg" alt="categories" class="product-image img-fluid">
+                  <img src="images/imgPhon/TEC-SPARK20-BK-300x300.jpg" alt="categories" class="product-image img-fluid">
                 </a>
                 <a href="index.html" class="btn-icon btn-wishlist">
                   <svg width="24" height="24" viewBox="0 0 24 24">
@@ -769,7 +745,7 @@
             <div class="product-item image-zoom-effect link-effect">
               <div class="image-holder">
                 <a href="index.html">
-                  <img src="images/product-item-10.jpg" alt="categories" class="product-image img-fluid">
+                  <img src="images/imgPhon/SAM-A35-5G-BL-1-300x300.jpg" alt="categories" class="product-image img-fluid">
                 </a>
                 <a href="index.html" class="btn-icon btn-wishlist">
                   <svg width="24" height="24" viewBox="0 0 24 24">
@@ -1055,163 +1031,127 @@
     </div>
   </section>
 
+  <section class="collection bg-light position-relative py-0">
+    <div class="container">
+      <div class="row">
+        <div class="title-xlarge text-uppercase txt-fx domino">Collection</div>
+        <div class="collection-item d-flex flex-wrap my-5">
+          <div class="col-md-6 column-container">
+            <div class="">
+              <img src="images/banner/procesa.jpg" alt="collection" class="product-image img-fluid">
+            </div>
+          </div>
+          <div class="col-md-6 column-container bg-white">
+            <section class="newsletter " no-repeat;">
+              <div class="container">
+                  <div class="row justify-content-center">
+                      <div class="col-lg-6 col-md-8 py-0 my-5">
+                          <div class="subscribe-header text-center pb-4">
+                              <h3 class="section-title text-uppercase fw-bold">¡Suscríbete a nuestro boletín!</h3>
+                              <p class="text-muted">Recibe las mejores ofertas y novedades directamente en tu correo.</p>
+                          </div>
+                          <form id="form" class="needs-validation" novalidate>
+                              <div class="row g-3">
+                                  <div class="col-md-6">
+                                      <label for="firstName" class="form-label">Nombre</label>
+                                      <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Ingresa tu nombre" required>
+                                      <div class="invalid-feedback">El nombre es obligatorio.</div>
+                                  </div>
+                                  <div class="col-md-6">
+                                      <label for="lastName" class="form-label">Apellido</label>
+                                      <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Ingresa tu apellido" required>
+                                      <div class="invalid-feedback">El apellido es obligatorio.</div>
+                                  </div>
+                                  <div class="col-md-6">
+                                      <label for="phone" class="form-label">Teléfono</label>
+                                      <input type="tel" class="form-control" id="phone" name="phone" placeholder="Ingresa tu número de teléfono" pattern="[0-9]{10}" required>
+                                      <div class="invalid-feedback">Por favor ingresa un número válido de 10 dígitos.</div>
+                                  </div>
+                                  <div class="col-md-6">
+                                      <label for="email" class="form-label">E-mail</label>
+                                      <input type="email" class="form-control" id="email" name="email" placeholder="Ingresa tu correo electrónico" required>
+                                      <div class="invalid-feedback">Se requiere una dirección de correo válida.</div>
+                                  </div>
+                              </div>
+                              <div class="mt-4">
+                                  <button type="submit" class="btn btn-dark btn-lg w-100">Suscribirse</button>
+                              </div>
+                              <div id="message" class="text-center mt-3"></div>
+                          </form>
+                      </div>
+                  </div>
+              </div>
+          </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <section class="logo-bar py-5 my-5">
     <div class="container">
       <div class="row">
         <div class="logo-content d-flex flex-wrap justify-content-between">
-          <img src="images/logo1.png" alt="logo" class="logo-image img-fluid">
-          <img src="images/logo2.png" alt="logo" class="logo-image img-fluid">
-          <img src="images/logo3.png" alt="logo" class="logo-image img-fluid">
-          <img src="images/logo4.png" alt="logo" class="logo-image img-fluid">
-          <img src="images/logo5.png" alt="logo" class="logo-image img-fluid">
+          <img src="images/LogosBrands/dell.png" alt="logo" class="logo-image img-fluid">
+          <img src="images/LogosBrands/Epson.png" alt="logo" class="logo-image img-fluid">
+          <img src="images/LogosBrands/hp-001.png" alt="logo" class="logo-image img-fluid">
+          <img src="images/LogosBrands/lenovo.png" alt="logo" class="logo-image img-fluid">
+          <img src="images/LogosBrands/mircrosoft.png" alt="logo" class="logo-image img-fluid">
         </div>
       </div>
     </div>
   </section>
-
-  <section class="newsletter bg-light" style="background: url(images/pattern-bg.png) no-repeat;">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-md-8 py-5 my-5">
-          <div class="subscribe-header text-center pb-3">
-            <h3 class="section-title text-uppercase">Sign Up for our Newsletter</h3>
-          </div>
-          <form id="form" class="needs-validation" novalidate>
-            <div class="row g-3">
-              <div class="col-md-6">
-                <label for="firstName" class="form-label">First Name</label>
-                <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Enter your first name" required>
-                <div class="invalid-feedback">First name is required.</div>
-              </div>
-              <div class="col-md-6">
-                <label for="lastName" class="form-label">Last Name</label>
-                <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Enter your last name" required>
-                <div class="invalid-feedback">Last name is required.</div>
-              </div>
-              <div class="col-md-6">
-                <label for="phone" class="form-label">Phone</label>
-                <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your phone number" pattern="[0-9]{10}" required>
-                <div class="invalid-feedback">Please enter a valid 10-digit phone number.</div>
-              </div>
-              <div class="col-md-6">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
-                <div class="invalid-feedback">A valid email address is required.</div>
-              </div>
-            </div>
-            <div class="mt-4">
-              <button type="submit" class="btn btn-dark btn-lg w-100">Sign Up</button>
-            </div>
-            <div id="message" class="text-center mt-3"></div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
-  
 
   <section class="instagram position-relative">
-    <div class="d-flex justify-content-center w-100 position-absolute bottom-0 z-1">
-      <a href="https://www.instagram.com/templatesjungle/" class="btn btn-dark px-5">Follow us on Instagram</a>
-    </div>
-    <div class="row g-0">
-      <div class="col-6 col-sm-4 col-md-2">
-        <div class="insta-item">
-          <a href="https://www.instagram.com/templatesjungle/" target="_blank">
-            <img src="images/insta-item1.jpg" alt="instagram" class="insta-image img-fluid">
-          </a>
-        </div>
-      </div>
-      <div class="col-6 col-sm-4 col-md-2">
-        <div class="insta-item">
-          <a href="https://www.instagram.com/templatesjungle/" target="_blank">
-            <img src="images/insta-item2.jpg" alt="instagram" class="insta-image img-fluid">
-          </a>
-        </div>
-      </div>
-      <div class="col-6 col-sm-4 col-md-2">
-        <div class="insta-item">
-          <a href="https://www.instagram.com/templatesjungle/" target="_blank">
-            <img src="images/insta-item3.jpg" alt="instagram" class="insta-image img-fluid">
-          </a>
-        </div>
-      </div>
-      <div class="col-6 col-sm-4 col-md-2">
-        <div class="insta-item">
-          <a href="https://www.instagram.com/templatesjungle/" target="_blank">
-            <img src="images/insta-item4.jpg" alt="instagram" class="insta-image img-fluid">
-          </a>
-        </div>
-      </div>
-      <div class="col-6 col-sm-4 col-md-2">
-        <div class="insta-item">
-          <a href="https://www.instagram.com/templatesjungle/" target="_blank">
-            <img src="images/insta-item5.jpg" alt="instagram" class="insta-image img-fluid">
-          </a>
-        </div>
-      </div>
-      <div class="col-6 col-sm-4 col-md-2">
-        <div class="insta-item">
-          <a href="https://www.instagram.com/templatesjungle/" target="_blank">
-            <img src="images/insta-item6.jpg" alt="instagram" class="insta-image img-fluid">
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <footer id="footer" class="bg-dark text-light mt-5">
-    <div class="container py-5">
+    <div class="container">
       <div class="row g-4">
-        <!-- Logo & About -->
-        <div class="col-md-3">
-          <div class="footer-intro">
-            <a href="index.html" class="d-block mb-3">
-              <img src="images/main-logo.png" alt="logo" class="img-fluid">
-            </a>
-            <p class="small text-muted">Gravida massa volutpat aenean odio. Amet, turpis erat nullam fringilla elementum diam in. Nisi, purus vitae, ultrices nunc. Sit ac sit suscipit hendrerit.</p>
-            <ul class="list-unstyled d-flex gap-3 mt-3">
-              <li><a href="#" class="text-light"><i class="bi bi-facebook fs-4"></i></a></li>
-              <li><a href="#" class="text-light"><i class="bi bi-twitter fs-4"></i></a></li>
-              <li><a href="#" class="text-light"><i class="bi bi-youtube fs-4"></i></a></li>
-              <li><a href="#" class="text-light"><i class="bi bi-pinterest fs-4"></i></a></li>
-              <li><a href="#" class="text-light"><i class="bi bi-instagram fs-4"></i></a></li>
-            </ul>
+          <!-- Logo & Acerca de -->
+          <div class="col-md-3">
+              <div class="footer-intro">
+                  <a href="index.html" class="d-block mb-3">
+                      <img src="images/main-logo.png" alt="logo" class="img-fluid">
+                  </a>
+                  <p class="small text-muted">Somos los mejores en cuanto a precios y productos, únete a nuestro crédito directo.</p>
+                  <p class="small text-muted">Teléfono: 045017700</p>
+                  <p class="small text-muted">Email: <a href="mailto:ventas@compu-tron.net" class="text-light">ventas@compu-tron.net</a></p>
+              </div>
           </div>
-        </div>
-  
-        <!-- Quick Links -->
-        <div class="col-md-3">
-          <h5 class="text-uppercase mb-3">Quick Links</h5>
-          <ul class="list-unstyled">
-            <li><a href="index.html" class="text-light text-decoration-none">Home</a></li>
-            <li><a href="about.html" class="text-light text-decoration-none">About</a></li>
-            <li><a href="services.html" class="text-light text-decoration-none">Services</a></li>
-            <li><a href="blog.html" class="text-light text-decoration-none">Blog</a></li>
-            <li><a href="contact.html" class="text-light text-decoration-none">Contact</a></li>
-          </ul>
-        </div>
-  
-        <!-- Help & Info -->
-        <div class="col-md-3">
-          <h5 class="text-uppercase mb-3">Help & Info</h5>
-          <ul class="list-unstyled">
-            <li><a href="#" class="text-light text-decoration-none">Track Your Order</a></li>
-            <li><a href="#" class="text-light text-decoration-none">Returns + Exchanges</a></li>
-            <li><a href="#" class="text-light text-decoration-none">Shipping + Delivery</a></li>
-            <li><a href="#" class="text-light text-decoration-none">FAQs</a></li>
-            <li><a href="#" class="text-light text-decoration-none">Contact Us</a></li>
-          </ul>
-        </div>
-  
-        <!-- Contact -->
-        <div class="col-md-3">
-          <h5 class="text-uppercase mb-3">Contact Us</h5>
-          <p class="small">Have questions? Email us at <a href="mailto:contact@yourcompany.com" class="text-light text-decoration-underline">contact@yourcompany.com</a></p>
-          <p class="small">Need help? Call us at <a href="tel:+43720115278" class="text-light text-decoration-underline">+43 720 11 52 78</a></p>
-        </div>
+
+          <!-- Menú -->
+          <div class="col-md-3">
+              <h5 class="text-uppercase mb-3 text-white">MENÚ</h5>
+              <ul class="list-unstyled">
+                  <li><a href="#" class="text-light">Inicio</a></li>
+                  <li><a href="#" class="text-light">Tienda</a></li>
+                  <li><a href="#" class="text-light">Nuestras tiendas</a></li>
+                  <li><a href="#" class="text-light">Crédito directo</a></li>
+              </ul>
+          </div>
+
+          <!-- Servicios -->
+          <div class="col-md-3">
+            <h5 class="text-uppercase mb-3 text-white">SERVICIOS</h5>
+              <ul class="list-unstyled">
+                  <li><a href="#" class="text-light">Políticas de privacidad</a></li>
+                  <li><a href="#" class="text-light">Términos y condiciones</a></li>
+                  <li><a href="#" class="text-light">Políticas de Envío y Entrega</a></li>
+                  <li><a href="#" class="text-light">Resolución aprobatoria</a></li>
+              </ul>
+          </div>
+
+          <!-- Mi Cuenta -->
+          <div class="col-md-3">
+              <h5 class="text-uppercase mb-3 text-white">MI CUENTA</h5>
+              <ul class="list-unstyled">
+                  <li><a href="#" class="text-light">Mi cuenta</a></li>
+                  <li><a href="#" class="text-light">Mi tienda</a></li>
+                  <li><a href="#" class="text-light">Mi Carrito</a></li>
+                  <li><a href="#" class="text-light">Tracking de orden</a></li>
+              </ul>
+          </div>
       </div>
-    </div>
+  </div>
+
     <div class="bg-secondary py-3">
       <div class="container d-flex flex-wrap justify-content-between align-items-center">
         <div class="d-flex align-items-center">
